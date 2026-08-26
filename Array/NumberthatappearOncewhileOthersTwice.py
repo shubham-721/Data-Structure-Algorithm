@@ -13,3 +13,15 @@ for num in nums:
     result^=num
 print(result)
 
+# using dicitionary
+
+dic={}
+for num in nums:
+    if num in dic:
+        dic[num]+=1
+    else:
+        dic[num]=1
+for num in dic:
+    if num==1:
+        print(num)
+
