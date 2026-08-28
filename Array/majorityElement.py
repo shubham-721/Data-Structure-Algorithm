@@ -14,5 +14,5 @@ for num in nums:
     else:
         count[num]=1
 for num in count:
-    count[num]=n/2
+    count[num]>n//2
 print(num)
