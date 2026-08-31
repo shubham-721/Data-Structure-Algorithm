@@ -8,6 +8,5 @@ for i in range(len(arr)):
             maxCount=count
     elif arr[i]!=1:
         count=0
-        continue
 print(maxCount)
     
