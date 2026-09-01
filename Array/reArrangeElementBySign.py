@@ -12,11 +12,14 @@ nums=[3,1,-2,-5,2,-4]
 #         i+=2
 #         j+=2
 # print(nums)
-pos=[]
+pos=[0]*3
 neg=[]
+p=0
 for num in nums:
     if num >0:
-        pos.append(num)
+        # pos.append(num)
+        pos[p]=num
+        p+=1
     else:
         neg.append(num)
 for i in range(len(pos)):
