@@ -26,5 +26,16 @@ for i in range(len(pos)):
     nums[2 * i] = pos[i]
     nums[2 * i + 1] = neg[i]
 print(nums)
-
+ans = [0] * len(nums)
+# in single pass
+pos = 0
+neg = 1
+for x in nums:
+    if x > 0:
+        ans[pos] = x
+        pos += 2
+    else:
+        ans[neg] = x
+        neg += 2
+print(nums)
 
