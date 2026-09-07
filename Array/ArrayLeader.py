@@ -21,8 +21,8 @@ for i in range(n-2,-1,-1):
 n=len(result)
 i=0
 j=n-1
-while j<n:
+while i<j:
     result[i],result[j]=result[j],result[i]
     i+=1
-    j+=1
+    j-=1
 print(result)
