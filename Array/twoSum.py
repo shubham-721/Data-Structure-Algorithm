@@ -12,7 +12,7 @@ for num in nums:
     req = target - num
     if req in dicc:
         print("Index:", dicc[req], i)
-        print("Number:", req, num)
+        # print("Number:", req, num)
         break
     dicc[num] = i
     i += 1
