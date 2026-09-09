@@ -25,4 +25,17 @@ for i in range(n):
             max_len=len
     if sum not in dic:
         dic[sum]=i
-print(max_len)
+# print(max_len)
+left=0
+summ=0
+maxlen=0
+for right in range(n):
+    summ+=nums[right]
+    while summ>k:
+        summ-=nums[left]
+        left+=1
+    if summ ==k:
+        length=right-left+1
+        if maxlen<length:
+            maxlen=length
+print(maxlen)
