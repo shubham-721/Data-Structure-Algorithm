@@ -14,4 +14,3 @@ while right<n:
     right+=1
     
 print(arr)
-print(arr)
