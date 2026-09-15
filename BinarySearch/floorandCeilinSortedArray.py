@@ -17,5 +17,5 @@ while low<=high:
     else:
         high=mid-1
         ceil=nums[mid]
-print(floor)
+print(floor)  
 print(ceil)
