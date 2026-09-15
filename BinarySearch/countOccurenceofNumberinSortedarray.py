@@ -1,33 +1,31 @@
-def first_Occurence(nums,x):
+def countOccurrence(nums,x):
     low=0
     high=len(nums)-1
-    ans=-1
+    first=-1
     while low<=high:
         mid=low+(high-low)//2
         if nums[mid]==x:
-            ans=mid
+            first=mid
             high=mid-1
         elif nums[mid]<x:
             low=mid+1
-            
+                
         else:
             high=mid-1
-    return ans
-def last_occurence(nums,x):
     low=0
     high=len(nums)-1
-    ans=-1
+    last=-1
     while low<=high:
         mid=low+(high-low)//2
         if nums[mid]==x:
-            ans=mid
+            last=mid
             low=mid+1
         elif nums[mid]>x:
             high=mid-1
         else:
             low=mid+1
-    return ans
-nums=[2,4,6,8,8,8,11,13]
-x=11
-print(first_Occurence(nums,x))
-print(last_occurence(nums,x))
+    if first==-1:
+        return 0
+    return last-first+1
+nums = [1, 2, 2, 2, 3, 4]
+print(countOccurrence(nums, 1))
