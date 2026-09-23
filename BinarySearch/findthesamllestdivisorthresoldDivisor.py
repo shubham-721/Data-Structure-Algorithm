@@ -7,3 +7,6 @@ for i in range(len(nums)):
     if nums[i]>large:
         large=nums[i]
 print(large)
+for i in range(1,large+1):
+    total=0
+    
